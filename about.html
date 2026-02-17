@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас - Диалан</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Unbounded:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="about.css">
+</head>
+<body class="about-page">
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">Диалан</a>
+            <nav>
+                <a href="index.html#tariffs">Тарифы</a>
+                <a href="services.html">Услуги</a>
+                <a href="#">О нас</a>
+                <a href="support.html">Поддержка</a>
+                <a href="index.html#connection">Подключение</a>
+            </nav>
+            <div class="header-right">
+                <a href="tel:+79493094266" class="phone">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                    +7 949-309-42-66
+                </a>
+                <a href="lk.html" class="user-btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                        <circle cx="12" cy="7" r="4"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>О компании</h1>
+            <p>Узнайте больше о нашей компании</p>
+        </div>
+    </section>
+
+    <section class="page-content">
+        <div class="container">
+            <div class="tabs-nav">
+                <button class="tab-btn active" data-tab="news">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 20H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v1m2 13a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2z"/>
+                        <line x1="9" y1="9" x2="13" y2="9"/>
+                        <line x1="9" y1="13" x2="13" y2="13"/>
+                    </svg>
+                    Новости
+                </button>
+                <button class="tab-btn" data-tab="vacancies">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                        <circle cx="9" cy="7" r="4"/>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                    </svg>
+                    Вакансии
+                </button>
+                <button class="tab-btn" data-tab="contacts">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                        <circle cx="12" cy="10" r="3"/>
+                    </svg>
+                    Контакты
+                </button>
+            </div>
+
+            <div class="tabs-content">
+                <div class="tab-pane active" id="news">
+                    <h2>Новости компании</h2>
+                    <div class="news-list">
+                        <article class="news-item">
+                            <div class="news-date">15 февраля 2026</div>
+                            <h3>Запуск новых тарифов для бизнеса</h3>
+                            <p>Мы рады сообщить о запуске новой линейки тарифов для корпоративных клиентов с увеличенной скоростью и расширенными возможностями.</p>
+                        </article>
+                        <article class="news-item">
+                            <div class="news-date">10 января 2026</div>
+                            <h3>Расширение зоны покрытия GPON</h3>
+                            <p>Теперь высокоскоростной интернет по технологии GPON доступен в новых районах города. Проверьте возможность подключения по вашему адресу.</p>
+                        </article>
+                        <article class="news-item">
+                            <div class="news-date">25 декабря 2025</div>
+                            <h3>С новым годом!</h3>
+                            <p>Поздравляем всех абонентов с наступающим новым годом! В январе действуют специальные скидки на подключение.</p>
+                        </article>
+                        <article class="news-item">
+                            <div class="news-date">5 декабря 2025</div>
+                            <h3>Модернизация сети</h3>
+                            <p>Проведены работы по увеличению пропускной способности магистральных каналов. Скорость интернета стала ещё выше!</p>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="vacancies">
+                    <h2>Вакансии</h2>
+                    <p class="vacancies-intro">Присоединяйтесь к нашей команде! Мы всегда ищем талантливых специалистов.</p>
+                    <div class="vacancies-list">
+                        <div class="vacancy-card">
+                            <h3>Специалист технической поддержки</h3>
+                            <div class="vacancy-details">
+                                <span><i class="fas fa-map-marker-alt"></i> г. Ясиноватая</span>
+                                <span><i class="fas fa-clock"></i> Полная занятость</span>
+                            </div>
+                            <p>Консультирование клиентов по техническим вопросам, настройка оборудования, решение проблем с подключением.</p>
+                            <ul>
+                                <li>Опыт работы в технической поддержке</li>
+                                <li>Знание сетевых технологий</li>
+                                <li>Коммуникабельность</li>
+                            </ul>
+                            <a href="index.html#connection" class="btn btn-primary">Откликнуться</a>
+                        </div>
+                        <div class="vacancy-card">
+                            <h3>Монтажник-связист</h3>
+                            <div class="vacancy-details">
+                                <span><i class="fas fa-map-marker-alt"></i> г. Ясиноватая</span>
+                                <span><i class="fas fa-clock"></i> Полная занятость</span>
+                            </div>
+                            <p>Монтаж и настройка абонентского оборудования, прокладка кабеля, подключение новых абонентов.</p>
+                            <ul>
+                                <li>Опыт монтажных работ</li>
+                                <li>Навыки работы с инструментом</li>
+                                <li>Водительское удостоверение</li>
+                            </ul>
+                            <a href="index.html#connection" class="btn btn-primary">Откликнуться</a>
+                        </div>
+                        <div class="vacancy-card">
+                            <h3>Менеджер по работе с клиентами</h3>
+                            <div class="vacancy-details">
+                                <span><i class="fas fa-map-marker-alt"></i> г. Ясиноватая</span>
+                                <span><i class="fas fa-clock"></i> Полная занятость</span>
+                            </div>
+                            <p>Приём заявок, консультирование по тарифам, сопровождение клиентов.</p>
+                            <ul>
+                                <li>Опыт работы в продажах</li>
+                                <li>Грамотная речь</li>
+                                <li>Уверенный пользователь ПК</li>
+                            </ul>
+                            <a href="index.html#connection" class="btn btn-primary">Откликнуться</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="contacts">
+                    <h2>Контакты</h2>
+                    <div class="contacts-grid">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </div>
+                            <h3>Адрес</h3>
+                            <p>г. Ясиноватая<br>м-н "Центральный", д. 24</p>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                            </div>
+                            <h3>Телефон</h3>
+                            <p>+7 949-309-42-66<br>+7 949-309-42-67</p>
+                            <a href="tel:+79493094266" class="contact-link">Позвонить</a>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <h3>Email</h3>
+                            <p>info@dialan.ru<br>support@dialan.ru</p>
+                            <a href="mailto:info@dialan.ru" class="contact-link">Написать</a>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12,6 12,12 16,14"/>
+                                </svg>
+                            </div>
+                            <h3>Время работы</h3>
+                            <p>Офис: Пн-Пт 9:00-18:00<br>Техподдержка: 24/7</p>
+                        </div>
+                    </div>
+                    <div class="map-container">
+                        <iframe src="https://yandex.ru/map-widget/v1/?text=Донецкая%20область,%20Ясиноватая,%20м-н%20Центральный,%2024&z=16&ll=37.9588%2C48.1225" width="100%" height="400" frameborder="0" allowfullscreen="true" style="position:relative; border-radius: 20px;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">Диалан</a>
+                    <p>Ваш надёжный интернет-провайдер. Подключаем скоростной интернет. г. Ясиноватая м-н "Центральный". д.24</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Услуги</h4>
+                    <ul>
+                        <li><a href="services.html#home">Интернет для дома</a></li>
+                        <li><a href="services.html#business">Интернет для бизнеса</a></li>
+                        <li><a href="services.html#phone">IP-телефония</a></li>
+                        <li><a href="services.html#tv">Телевидение</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Компания</h4>
+                    <ul>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="support.html">Поддержка</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Поддержка</h4>
+                    <ul>
+                        <li><a href="support.html">Помощь</a></li>
+                        <li><a href="support.html#docs">Договор</a></li>
+                        <li><a href="support.html#payment">Оплата</a></li>
+                        <li><a href="#">Скорость</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Диалан. Все права защищены.</p>
+                <div class="social-links">
+                    <a href="#" title="ВКонтакте"><i class="fab fa-vk"></i></a>
+                    <a href="#" title="Одноклассники"><i class="fab fa-odnoklassniki"></i></a>
+                    <a href="#" title="Telegram"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const tabPanes = document.querySelectorAll('.tab-pane');
+
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const tabId = btn.dataset.tab;
+                
+                tabBtns.forEach(b => b.classList.remove('active'));
+                tabPanes.forEach(p => p.classList.remove('active'));
+                
+                btn.classList.add('active');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+
+        const hash = window.location.hash.substring(1);
+        if (hash) {
+            const targetBtn = document.querySelector(`[data-tab="${hash}"]`);
+            if (targetBtn) {
+                targetBtn.click();
+            }
+        }
+    </script>
+</body>
+</html>

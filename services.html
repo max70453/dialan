@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги - Диалан</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Unbounded:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="services.css">
+</head>
+<body class="services-page">
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">Диалан</a>
+            <nav>
+                <a href="index.html#tariffs">Тарифы</a>
+                <a href="#">Услуги</a>
+                <a href="about.html">О нас</a>
+                <a href="support.html">Поддержка</a>
+                <a href="index.html#connection">Подключение</a>
+            </nav>
+            <div class="header-right">
+                <a href="tel:+79493094266" class="phone">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                    +7 949-309-42-66
+                </a>
+                <a href="lk.html" class="user-btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                        <circle cx="12" cy="7" r="4"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="services-hero">
+        <div class="container">
+            <h1>Наши услуги</h1>
+            <p>Выберите подходящую услугу для ваших нужд</p>
+        </div>
+    </section>
+
+    <section class="services-tabs">
+        <div class="container">
+            <div class="tabs-nav">
+                <button class="tab-btn active" data-tab="home">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                        <polyline points="9,22 9,12 15,12 15,22"/>
+                    </svg>
+                    Интернет для дома
+                </button>
+                <button class="tab-btn" data-tab="business">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                    </svg>
+                    Интернет для бизнеса
+                </button>
+                <button class="tab-btn" data-tab="phone">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                    IP-телефония
+                </button>
+                <button class="tab-btn" data-tab="tv">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="7" width="20" height="15" rx="2" ry="2"/>
+                        <polyline points="17,2 12,7 7,2"/>
+                    </svg>
+                    Телевидение
+                </button>
+            </div>
+
+            <div class="tabs-content">
+                <div class="tab-pane active" id="home">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                                <polyline points="9,22 9,12 15,12 15,22"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h2>Интернет для дома</h2>
+                            <p>Надёжный высокоскоростной интернет для вашего дома по выгодным тарифам</p>
+                        </div>
+                    </div>
+                    <div class="service-features">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="13,2 3,14 12,14 11,22 21,10 12,10"/>
+                                </svg>
+                            </div>
+                            <h3>Скорость до 1000 Мбит/с</h3>
+                            <p>Безлимитный интернет на максимальной скорости для любых задач</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12,6 12,12 16,14"/>
+                                </svg>
+                            </div>
+                            <h3>Подключение за 24 часа</h3>
+                            <p>Быстрое подключение в удобное для вас время</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                </svg>
+                            </div>
+                            <h3>Стабильное соединение</h3>
+                            <p>Гарантированная стабильность и надёжность 24/7</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="6" width="20" height="12" rx="2"/>
+                                    <path d="M6 10v4M10 10v4M14 10v4M18 10v4"/>
+                                </svg>
+                            </div>
+                            <h3>Wi-Fi роутер в аренду</h3>
+                            <p>Оборудование для беспроводного подключения</p>
+                        </div>
+                    </div>
+                    <div class="service-tariffs">
+                        <h3>Тарифы</h3>
+                        <div class="tariffs-grid">
+                            <div class="tariff-card">
+                                <div class="tariff-name">Старт</div>
+                                <div class="tariff-speed-card">30 <span>Мбит/с</span></div>
+                                <div class="tariff-price">299 <span>₽/мес</span></div>
+                                <ul class="tariff-features">
+                                    <li>Безлимитный интернет</li>
+                                    <li>Wi-Fi роутер в аренду</li>
+                                    <li>Техническая поддержка</li>
+                                </ul>
+                                <a href="index.html#connection" class="btn btn-primary" onclick="setTariff('Старт', 30, 299)">Подключить</a>
+                            </div>
+                            <div class="tariff-card popular">
+                                <div class="tariff-name">Оптимальный</div>
+                                <div class="tariff-speed-card">100 <span>Мбит/с</span></div>
+                                <div class="tariff-price">499 <span>₽/мес</span></div>
+                                <ul class="tariff-features">
+                                    <li>Безлимитный интернет</li>
+                                    <li>Wi-Fi роутер в аренду</li>
+                                    <li>Техническая поддержка</li>
+                                    <li>Статический IP</li>
+                                </ul>
+                                <a href="index.html#connection" class="btn btn-primary" onclick="setTariff('Оптимальный', 100, 499)">Подключить</a>
+                            </div>
+                            <div class="tariff-card">
+                                <div class="tariff-name">Премиум</div>
+                                <div class="tariff-speed-card">500 <span>Мбит/с</span></div>
+                                <div class="tariff-price">799 <span>₽/мес</span></div>
+                                <ul class="tariff-features">
+                                    <li>Безлимитный интернет</li>
+                                    <li>Wi-Fi роутер в подарок</li>
+                                    <li>Приоритетная поддержка</li>
+                                    <li>Статический IP</li>
+                                    <li>Антивирус</li>
+                                </ul>
+                                <a href="index.html#connection" class="btn btn-primary" onclick="setTariff('Премиум', 500, 799)">Подключить</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="business">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h2>Интернет для бизнеса</h2>
+                            <p>Корпоративные решения для надёжной работы вашего бизнеса</p>
+                        </div>
+                    </div>
+                    <div class="service-features">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                </svg>
+                            </div>
+                            <h3>Выделенный канал</h3>
+                            <p>Индивидуальный канал с гарантированной пропускной способностью</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                </svg>
+                            </div>
+                            <h3>Персональный менеджер</h3>
+                            <p>Личный менеджер для решения всех вопросов</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                    <line x1="8" y1="21" x2="16" y2="21"/>
+                                    <line x1="12" y1="17" x2="12" y2="21"/>
+                                </svg>
+                            </div>
+                            <h3>SLA 99.9%</h3>
+                            <p>Гарантия uptime с финансовыми обязательствами</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="3"/>
+                                    <path d="M12 1v6M12 17v6M4.22 4.22l4.24 4.24M15.54 15.54l4.24 4.24M1 12h6M17 12h6M4.22 19.78l4.24-4.24M15.54 8.46l4.24-4.24"/>
+                                </svg>
+                            </div>
+                            <h3>Резервное подключение</h3>
+                            <p>Автоматическое переключение при сбоях основного канала</p>
+                        </div>
+                    </div>
+                    <div class="service-tariffs">
+                        <h3>Бизнес-тарифы</h3>
+                        <div class="tariffs-grid">
+                            <div class="tariff-card">
+                                <div class="tariff-name">Бизнес Старт</div>
+                                <div class="tariff-speed-card">100 <span>Мбит/с</span></div>
+                                <div class="tariff-price">1499 <span>₽/мес</span></div>
+                                <ul class="tariff-features">
+                                    <li>Выделенный канал</li>
+                                    <li>Статический IP</li>
+                                    <li>Техническая поддержка</li>
+                                    <li>Мониторинг 24/7</li>
+                                </ul>
+                                <a href="index.html#connection" class="btn btn-primary">Подключить</a>
+                            </div>
+                            <div class="tariff-card popular">
+                                <div class="tariff-name">Бизнес Оптимальный</div>
+                                <div class="tariff-speed-card">500 <span>Мбит/с</span></div>
+                                <div class="tariff-price">3499 <span>₽/мес</span></div>
+                                <ul class="tariff-features">
+                                    <li>Выделенный канал</li>
+                                    <li>Статические IP-адреса</li>
+                                    <li>Персональный менеджер</li>
+                                    <li>Резервный канал</li>
+                                    <li>SLA 99.9%</li>
+                                </ul>
+                                <a href="index.html#connection" class="btn btn-primary">Подключить</a>
+                            </div>
+                            <div class="tariff-card">
+                                <div class="tariff-name">Бизнес Премиум</div>
+                                <div class="tariff-speed-card">1000 <span>Мбит/с</span></div>
+                                <div class="tariff-price">6999 <span>₽/мес</span></div>
+                                <ul class="tariff-features">
+                                    <li>Выделенный канал</li>
+                                    <li>До 5 статических IP</li>
+                                    <li>Выделенный менеджер</li>
+                                    <li>Резервный канал</li>
+                                    <li>SLA 99.99%</li>
+                                    <li>Приоритетная поддержка</li>
+                                </ul>
+                                <a href="index.html#connection" class="btn btn-primary">Подключить</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="phone">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h2>IP-телефония</h2>
+                            <p>Виртуальная телефония для бизнеса с современными функциями</p>
+                        </div>
+                    </div>
+                    <div class="service-features">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="22" y1="2" x2="11" y2="13"/>
+                                    <polygon points="22,2 15,22 11,13 2,9"/>
+                                </svg>
+                            </div>
+                            <h3>Виртуальные номера</h3>
+                            <p>Городские и федеральные номера для приёма звонков</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                                    <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+                                </svg>
+                            </div>
+                            <h3>Уведомления</h3>
+                            <p>SMS и email уведомления о пропущенных вызовах</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                    <polyline points="14,2 14,8 20,8"/>
+                                    <line x1="16" y1="13" x2="8" y2="13"/>
+                                    <line x1="16" y1="17" x2="8" y2="17"/>
+                                </svg>
+                            </div>
+                            <h3>Запись разговоров</h3>
+                            <p>Запись и хранение всех телефонных разговоров</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="22,12 18,12 15,21 9,3 6,12 2,12"/>
+                                </svg>
+                            </div>
+                            <h3>Статистика</h3>
+                            <p>Детальная статистика звонков и аналитика</p>
+                        </div>
+                    </div>
+                    <div class="service-tariffs">
+                        <h3>Тарифы IP-телефонии</h3>
+                        <div class="tariffs-grid">
+                            <div class="tariff-card">
+                                <div class="tariff-name">Базовый</div>
+                                <div class="tariff-speed-card">1 <span>номер</span></div>
+                                <div class="tariff-price">490 <span>₽/мес</span></div>
+                                <ul class="tariff-features">
+                                    <li>1 виртуальный номер</li>
+                                    <li>100 минут исходящих</li>
+                                    <li>Запись разговоров</li>
+                                    <li>Статистика</li>
+                                </ul>
+                                <a href="index.html#connection" class="btn btn-primary">Подключить</a>
+                            </div>
+                            <div class="tariff-card popular">
+                                <div class="tariff-name">Бизнес</div>
+                                <div class="tariff-speed-card">3 <span>номера</span></div>
+                                <div class="tariff-price">1290 <span>₽/мес</span></div>
+                                <ul class="tariff-features">
+                                    <li>3 виртуальных номера</li>
+                                    <li>500 минут исходящих</li>
+                                    <li>Запись разговоров</li>
+                                    <li>IVR меню</li>
+                                    <li>Статистика</li>
+                                </ul>
+                                <a href="index.html#connection" class="btn btn-primary">Подключить</a>
+                            </div>
+                            <div class="tariff-card">
+                                <div class="tariff-name">Корпорация</div>
+                                <div class="tariff-speed-card">10 <span>номеров</span></div>
+                                <div class="tariff-price">3990 <span>₽/мес</span></div>
+                                <ul class="tariff-features">
+                                    <li>10 виртуальных номеров</li>
+                                    <li>Безлимит исходящих</li>
+                                    <li>Запись разговоров</li>
+                                    <li>IVR меню</li>
+                                    <li>Очереди вызовов</li>
+                                    <li>Интеграция с CRM</li>
+                                </ul>
+                                <a href="index.html#connection" class="btn btn-primary">Подключить</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="tv">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="7" width="20" height="15" rx="2" ry="2"/>
+                                <polyline points="17,2 12,7 7,2"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h2>Телевидение</h2>
+                            <p>Цифровое телевидение с сотнями каналов в HD и 4K качестве</p>
+                        </div>
+                    </div>
+                    <div class="service-features">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="7" width="20" height="15" rx="2" ry="2"/>
+                                    <polyline points="17,2 12,7 7,2"/>
+                                </svg>
+                            </div>
+                            <h3>200+ каналов</h3>
+                            <p>Большой выбор каналов различных жанров и направлений</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                    <line x1="8" y1="21" x2="16" y2="21"/>
+                                    <line x1="12" y1="17" x2="12" y2="21"/>
+                                </svg>
+                            </div>
+                            <h3>HD и 4K</h3>
+                            <p>Высокое качество изображения на всех каналах</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polygon points="10,8 16,12 10,16 10,8"/>
+                                </svg>
+                            </div>
+                            <h3>Архив 7 дней</h3>
+                            <p>Смотрите передачи, которые вы пропустили, за последние 7 дней</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 11V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v6"/>
+                                    <path d="M10 15h4"/>
+                                    <path d="M18 21a2 2 0 0 0 2-2v-5a2 2 0 0 0-2-2h-2"/>
+                                    <rect x="6" y="14" width="8" height="6" rx="1"/>
+                                </svg>
+                            </div>
+                            <h3>Мультиэкран</h3>
+                            <p>Смотрите на нескольких устройствах одновременно</p>
+                        </div>
+                    </div>
+                    <div class="service-tariffs">
+                        <h3>Тарифы телевидения</h3>
+                        <div class="tariffs-grid">
+                            <div class="tariff-card">
+                                <div class="tariff-name">Эконом</div>
+                                <div class="tariff-speed-card">80 <span>каналов</span></div>
+                                <div class="tariff-price">199 <span>₽/мес</span></div>
+                                <ul class="tariff-features">
+                                    <li>80 каналов</li>
+                                    <li>SD качество</li>
+                                    <li>Электронный гид</li>
+                                </ul>
+                                <a href="index.html#connection" class="btn btn-primary">Подключить</a>
+                            </div>
+                            <div class="tariff-card popular">
+                                <div class="tariff-name">Стандарт</div>
+                                <div class="tariff-speed-card">150 <span>каналов</span></div>
+                                <div class="tariff-price">399 <span>₽/мес</span></div>
+                                <ul class="tariff-features">
+                                    <li>150 каналов</li>
+                                    <li>HD качество</li>
+                                    <li>Архив 7 дней</li>
+                                    <li>Управление эфиром</li>
+                                </ul>
+                                <a href="index.html#connection" class="btn btn-primary">Подключить</a>
+                            </div>
+                            <div class="tariff-card">
+                                <div class="tariff-name">Премиум</div>
+                                <div class="tariff-speed-card">200+ <span>каналов</span></div>
+                                <div class="tariff-price">699 <span>₽/мес</span></div>
+                                <ul class="tariff-features">
+                                    <li>200+ каналов</li>
+                                    <li>4K качество</li>
+                                    <li>Архив 7 дней</li>
+                                    <li>Управление эфиром</li>
+                                    <li>Мультиэкран</li>
+                                    <li>Кинотека</li>
+                                </ul>
+                                <a href="index.html#connection" class="btn btn-primary">Подключить</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Нужна консультация?</h2>
+            <p>Наши специалисты помогут подобрать оптимальное решение</p>
+            <a href="index.html#connection" class="btn btn-primary">Оставить заявку</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">Диалан</a>
+                    <p>Ваш надёжный интернет-провайдер. Подключаем скоростной интернет. г. Ясиноватая м-н "Центральный". д.24</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Услуги</h4>
+                    <ul>
+                        <li><a href="services.html#home">Интернет для дома</a></li>
+                        <li><a href="services.html#business">Интернет для бизнеса</a></li>
+                        <li><a href="services.html#phone">IP-телефония</a></li>
+                        <li><a href="services.html#tv">Телевидение</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Компания</h4>
+                    <ul>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="support.html">Поддержка</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Поддержка</h4>
+                    <ul>
+                        <li><a href="support.html">Помощь</a></li>
+                        <li><a href="support.html#docs">Договор</a></li>
+                        <li><a href="support.html#payment">Оплата</a></li>
+                        <li><a href="#">Скорость</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Диалан. Все права защищены.</p>
+                <div class="social-links">
+                    <a href="#" title="ВКонтакте"><i class="fab fa-vk"></i></a>
+                    <a href="#" title="Одноклассники"><i class="fab fa-odnoklassniki"></i></a>
+                    <a href="#" title="Telegram"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const tabPanes = document.querySelectorAll('.tab-pane');
+
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const tabId = btn.dataset.tab;
+                
+                tabBtns.forEach(b => b.classList.remove('active'));
+                tabPanes.forEach(p => p.classList.remove('active'));
+                
+                btn.classList.add('active');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+
+        const hash = window.location.hash.substring(1);
+        if (hash) {
+            const targetBtn = document.querySelector(`[data-tab="${hash}"]`);
+            if (targetBtn) {
+                targetBtn.click();
+            }
+        }
+
+        function setTariff(name, speed, price) {
+            localStorage.setItem('selectedTariff', JSON.stringify({ name, speed, price }));
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

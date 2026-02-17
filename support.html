@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поддержка - Диалан</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Unbounded:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="about.css">
+    <style>
+        .support-hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 50%, var(--highlight) 100%);
+        }
+        
+        .speed-test-section {
+            background: var(--white);
+            padding: 40px;
+            border-radius: var(--radius);
+            margin-top: 40px;
+            box-shadow: var(--shadow);
+        }
+        
+        .speed-test-section h3 {
+            font-size: 24px;
+            color: var(--primary);
+            margin-bottom: 20px;
+            font-family: 'Unbounded', cursive;
+        }
+        
+        .speed-test-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 20px 40px;
+            background: var(--accent);
+            color: var(--white);
+            border: none;
+            border-radius: var(--radius-sm);
+            font-family: 'Onest', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-bottom: 24px;
+        }
+        
+        .speed-test-btn:hover {
+            background: var(--highlight);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(44, 116, 179, 0.4);
+        }
+        
+        .speed-result {
+            display: none;
+            text-align: center;
+            padding: 32px;
+            background: var(--light);
+            border-radius: var(--radius-sm);
+        }
+        
+        .speed-result.active {
+            display: block;
+        }
+        
+        .speed-value {
+            font-size: 56px;
+            font-weight: 700;
+            color: var(--accent);
+            font-family: 'Unbounded', cursive;
+        }
+        
+        .speed-value span {
+            font-size: 20px;
+            color: var(--text-light);
+        }
+        
+        .speed-label {
+            color: var(--text-light);
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body class="support-page">
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">Диалан</a>
+            <nav>
+                <a href="index.html#tariffs">Тарифы</a>
+                <a href="services.html">Услуги</a>
+                <a href="about.html">О нас</a>
+                <a href="#">Поддержка</a>
+                <a href="index.html#connection">Подключение</a>
+            </nav>
+            <div class="header-right">
+                <a href="tel:+79493094266" class="phone">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                    +7 949-309-42-66
+                </a>
+                <a href="lk.html" class="user-btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                        <circle cx="12" cy="7" r="4"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-hero support-hero">
+        <div class="container">
+            <h1>Поддержка</h1>
+            <p>Мы всегда готовы помочь</p>
+        </div>
+    </section>
+
+    <section class="page-content">
+        <div class="container">
+            <div class="tabs-nav">
+                <button class="tab-btn active" data-tab="help">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                        <line x1="12" y1="17" x2="12.01" y2="17"/>
+                    </svg>
+                    Помощь
+                </button>
+                <button class="tab-btn" data-tab="docs">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14,2 14,8 20,8"/>
+                        <line x1="16" y1="13" x2="8" y2="13"/>
+                        <line x1="16" y1="17" x2="8" y2="17"/>
+                    </svg>
+                    Договор
+                </button>
+                <button class="tab-btn" data-tab="payment">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
+                        <line x1="1" y1="10" x2="23" y2="10"/>
+                    </svg>
+                    Оплата
+                </button>
+            </div>
+
+            <div class="tabs-content">
+                <div class="tab-pane active" id="help">
+                    <h2>Часто задаваемые вопросы</h2>
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <h3>Как подключить интернет?</h3>
+                            <p>Вы можете оставить заявку на подключение через форму на сайте или позвонить нам по телефону. Наш специалист свяжется с вами для уточнения деталей и согласования удобного времени подключения.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Какая скорость интернета у меня будет?</h3>
+                            <p>Скорость зависит от выбранного тарифа и технологии подключения. Мы гарантируем скорость, указанную в вашем тарифе. Вы можете проверить текущую скорость с помощью нашего сервиса.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Что делать, если интернет не работает?</h3>
+                            <p>Сначала перезагрузите роутер и компьютер. Проверьте все кабели. Если проблема не решена, позвоните в техническую поддержку по телефону или оставьте заявку на сайте.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Как настроить Wi-Fi роутер?</h3>
+                            <p>Мы предоставляем роутеры с уже настроенными параметрами. Если вам нужно перенастроить роутер, вы можете найти инструкции в разделе документов или обратиться в поддержку.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Можно ли изменить тариф?</h3>
+                            <p>Да, вы можете изменить тариф в любой момент через личный кабинет или позвонив в офис. Изменение тарифа происходит со следующего месяца.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Как расторгнуть договор?</h3>
+                            <p>Для расторжения договора необходимо подать заявление в офисе компании или через личный кабинет. При расторжении необходимо оплатить все задолженности.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="speed-test-section">
+                        <h3>Проверить скорость интернета</h3>
+                        <button class="speed-test-btn" onclick="runSpeedTest()">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                                <polygon points="13,2 3,14 12,14 11,22 21,10 12,10"/>
+                            </svg>
+                            Запустить тест
+                        </button>
+                        <div class="speed-result" id="speedResult">
+                            <div class="speed-value"><span id="speedValue">0</span> <span>Мбит/с</span></div>
+                            <div class="speed-label">Текущая скорость загрузки</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="docs">
+                    <h2>Документы</h2>
+                    <div class="docs-list">
+                        <div class="doc-card">
+                            <div class="doc-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                    <polyline points="14,2 14,8 20,8"/>
+                                </svg>
+                            </div>
+                            <div class="doc-info">
+                                <h3>Договор на оказание услуг связи</h3>
+                                <p>Публичная оферта на предоставление услуг интернет-связи</p>
+                                <a href="docs/contract.html" target="_blank" class="doc-link">Скачать PDF</a>
+                            </div>
+                        </div>
+                        <div class="doc-card">
+                            <div class="doc-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                    <polyline points="14,2 14,8 20,8"/>
+                                </svg>
+                            </div>
+                            <div class="doc-info">
+                                <h3>Политика конфиденциальности</h3>
+                                <p>Политика обработки персональных данных</p>
+                                <a href="docs/privacy.html" target="_blank" class="doc-link">Скачать PDF</a>
+                            </div>
+                        </div>
+                        <div class="doc-card">
+                            <div class="doc-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                    <polyline points="14,2 14,8 20,8"/>
+                                </svg>
+                            </div>
+                            <div class="doc-info">
+                                <h3>Правила оказания услуг</h3>
+                                <p>Правила и условия предоставления услуг связи</p>
+                                <a href="docs/rules.html" target="_blank" class="doc-link">Скачать PDF</a>
+                            </div>
+                        </div>
+                        <div class="doc-card">
+                            <div class="doc-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                    <polyline points="14,2 14,8 20,8"/>
+                                </svg>
+                            </div>
+                            <div class="doc-info">
+                                <h3>Тарифы и услуги</h3>
+                                <p>Актуальный список тарифов и дополнительных услуг</p>
+                                <a href="services.html" class="doc-link">Перейти к тарифам</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="payment">
+                    <h2>Способы оплаты</h2>
+                    <div class="payment-methods">
+                        <div class="payment-card">
+                            <div class="payment-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
+                                    <line x1="1" y1="10" x2="23" y2="10"/>
+                                </svg>
+                            </div>
+                            <h3>Банковской картой</h3>
+                            <p>Оплатите услуги банковской картой Visa, MasterCard или МИР через личный кабинет или на сайте.</p>
+                        </div>
+                        <div class="payment-card">
+                            <div class="payment-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                </svg>
+                            </div>
+                            <h3>В офисе</h3>
+                            <p>Оплатить услуги можно в нашем офисе по адресу: г. Ясиноватая, м-н "Центральный", д. 24</p>
+                        </div>
+                        <div class="payment-card">
+                            <div class="payment-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="12" y1="1" x2="12" y2="23"/>
+                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                                </svg>
+                            </div>
+                            <h3>По реквизитам</h3>
+                            <p>Перевод по банковским реквизитам. Реквизиты доступны в разделе документов.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="payment-info">
+                        <h3>Важная информация</h3>
+                        <ul>
+                            <li>Списание абонентской платы происходит ежемесячно в день подключения</li>
+                            <li>При неуплате услуг более 10 дней возможно приостановление доступа</li>
+                            <li>Квитанции об оплате доступны в личном кабинете</li>
+                            <li>При оплате картой комиссия не взимается</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">Диалан</a>
+                    <p>Ваш надёжный интернет-провайдер. Подключаем скоростной интернет. г. Ясиноватая м-н "Центральный". д.24</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Услуги</h4>
+                    <ul>
+                        <li><a href="services.html#home">Интернет для дома</a></li>
+                        <li><a href="services.html#business">Интернет для бизнеса</a></li>
+                        <li><a href="services.html#phone">IP-телефония</a></li>
+                        <li><a href="services.html#tv">Телевидение</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Компания</h4>
+                    <ul>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="support.html">Поддержка</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Поддержка</h4>
+                    <ul>
+                        <li><a href="support.html">Помощь</a></li>
+                        <li><a href="support.html#docs">Договор</a></li>
+                        <li><a href="support.html#payment">Оплата</a></li>
+                        <li><a href="#">Скорость</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Диалан. Все права защищены.</p>
+                <div class="social-links">
+                    <a href="#" title="ВКонтакте"><i class="fab fa-vk"></i></a>
+                    <a href="#" title="Одноклассники"><i class="fab fa-odnoklassniki"></i></a>
+                    <a href="#" title="Telegram"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const tabPanes = document.querySelectorAll('.tab-pane');
+
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const tabId = btn.dataset.tab;
+                
+                tabBtns.forEach(b => b.classList.remove('active'));
+                tabPanes.forEach(p => p.classList.remove('active'));
+                
+                btn.classList.add('active');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+
+        const hash = window.location.hash.substring(1);
+        if (hash) {
+            const targetBtn = document.querySelector(`[data-tab="${hash}"]`);
+            if (targetBtn) {
+                targetBtn.click();
+            }
+        }
+
+        function runSpeedTest() {
+            const result = document.getElementById('speedResult');
+            const value = document.getElementById('speedValue');
+            
+            result.classList.add('active');
+            value.textContent = '0';
+            
+            let speed = 0;
+            const interval = setInterval(() => {
+                speed += Math.floor(Math.random() * 50) + 50;
+                if (speed >= 100) {
+                    speed = Math.floor(Math.random() * 200) + 50;
+                    value.textContent = speed;
+                    clearInterval(interval);
+                } else {
+                    value.textContent = speed;
+                }
+            }, 200);
+        }
+    </script>
+</body>
+</html>

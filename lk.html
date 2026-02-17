@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет - Диалан</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Unbounded:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="lk.css">
+</head>
+<body class="lk-page">
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">Диалан</a>
+            <nav>
+                <a href="index.html#tariffs">Тарифы</a>
+                <a href="services.html">Услуги</a>
+                <a href="about.html">О нас</a>
+                <a href="support.html">Поддержка</a>
+                <a href="index.html#connection">Подключение</a>
+            </nav>
+            <div class="header-right">
+                <a href="tel:+79493094266" class="phone">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                    +7 949-309-42-66
+                </a>
+                <a href="lk.html" class="user-btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                        <circle cx="12" cy="7" r="4"/>
+                    </svg>
+                    <span id="userName">Абонент</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="lk-hero">
+        <div class="container">
+            <div class="user-welcome">
+                <h1>Добро пожаловать, <span id="welcomeName">Абонент</span>!</h1>
+                <p>Управляйте вашими услугами и следите за балансом</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="lk-content">
+        <div class="container">
+            <div class="lk-grid">
+                <div class="lk-sidebar">
+                    <div class="user-card">
+                        <div class="user-avatar">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                        </div>
+                        <div class="user-info">
+                            <h3 id="sidebarName">Абонент</h3>
+                            <p>Лицевой счёт: <span id="accountNumber">000001</span></p>
+                        </div>
+                    </div>
+                    <nav class="lk-nav">
+                        <a href="#" class="active" data-section="dashboard">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="7" height="7"/>
+                                <rect x="14" y="3" width="7" height="7"/>
+                                <rect x="14" y="14" width="7" height="7"/>
+                                <rect x="3" y="14" width="7" height="7"/>
+                            </svg>
+                            Главная
+                        </a>
+                        <a href="#" data-section="tariff">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                            </svg>
+                            Мой тариф
+                        </a>
+                        <a href="#" data-section="services">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            </svg>
+                            Услуги
+                        </a>
+                        <a href="#" data-section="payment">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
+                                <line x1="1" y1="10" x2="23" y2="10"/>
+                            </svg>
+                            Оплата
+                        </a>
+                        <a href="#" data-section="tickets">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                            </svg>
+                            Обращения
+                        </a>
+                        <a href="#" data-section="settings">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="3"/>
+                                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                            </svg>
+                            Настройки
+                        </a>
+                        <a href="index.html" class="logout">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
+                                <polyline points="16,17 21,12 16,7"/>
+                                <line x1="21" y1="12" x2="9" y2="12"/>
+                            </svg>
+                            Выход
+                        </a>
+                    </nav>
+                </div>
+
+                <div class="lk-main">
+                    <div class="lk-section active" id="dashboard">
+                        <h2>Обзор</h2>
+                        <div class="stats-grid">
+                            <div class="stat-card balance">
+                                <div class="stat-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="12" y1="1" x2="12" y2="23"/>
+                                        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                                    </svg>
+                                </div>
+                                <div class="stat-info">
+                                    <span class="stat-label">Баланс</span>
+                                    <span class="stat-value" id="balance">0 ₽</span>
+                                </div>
+                            </div>
+                            <div class="stat-card tariff">
+                                <div class="stat-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polygon points="13,2 3,14 12,14 11,22 21,10 12,10"/>
+                                    </svg>
+                                </div>
+                                <div class="stat-info">
+                                    <span class="stat-label">Тариф</span>
+                                    <span class="stat-value" id="currentTariff">-</span>
+                                </div>
+                            </div>
+                            <div class="stat-card speed">
+                                <div class="stat-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <polyline points="12,6 12,12 16,14"/>
+                                    </svg>
+                                </div>
+                                <div class="stat-info">
+                                    <span class="stat-label">Скорость</span>
+                                    <span class="stat-value" id="currentSpeed">- Мбит/с</span>
+                                </div>
+                            </div>
+                            <div class="stat-card next-payment">
+                                <div class="stat-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                        <line x1="16" y1="2" x2="16" y2="6"/>
+                                        <line x1="8" y1="2" x2="8" y2="6"/>
+                                        <line x1="3" y1="10" x2="21" y2="10"/>
+                                    </svg>
+                                </div>
+                                <div class="stat-info">
+                                    <span class="stat-label">Следующий платёж</span>
+                                    <span class="stat-value" id="nextPayment">-</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="dashboard-cards">
+                            <div class="dash-card">
+                                <h3>Текущие услуги</h3>
+                                <ul class="services-list" id="activeServices">
+                                    <li>Интернет</li>
+                                </ul>
+                            </div>
+                            <div class="dash-card">
+                                <h3>Последние платежи</h3>
+                                <div class="payments-history" id="paymentsHistory">
+                                    <p class="empty">Нет платежей</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lk-section" id="tariff">
+                        <h2>Мой тариф</h2>
+                        <div class="current-tariff-card">
+                            <div class="tariff-header">
+                                <h3 id="tariffName">-</h3>
+                                <span class="tariff-status active">Активен</span>
+                            </div>
+                            <div class="tariff-body">
+                                <div class="tariff-detail">
+                                    <span>Скорость</span>
+                                    <strong id="tariffSpeed">- Мбит/с</strong>
+                                </div>
+                                <div class="tariff-detail">
+                                    <span>Абонентская плата</span>
+                                    <strong id="tariffPrice">- ₽/мес</strong>
+                                </div>
+                                <div class="tariff-detail">
+                                    <span>Период оплаты</span>
+                                    <strong>Ежемесячно</strong>
+                                </div>
+                            </div>
+                            <div class="tariff-actions">
+                                <a href="services.html" class="btn btn-primary">Сменить тариф</a>
+                            </div>
+                        </div>
+                        
+                        <div class="available-tariffs">
+                            <h3>Доступные тарифы</h3>
+                            <div class="tariffs-preview">
+                                <div class="tariff-preview-card">
+                                    <h4>Старт</h4>
+                                    <p>30 Мбит/с</p>
+                                    <span>299 ₽/мес</span>
+                                </div>
+                                <div class="tariff-preview-card">
+                                    <h4>Оптимальный</h4>
+                                    <p>100 Мбит/с</p>
+                                    <span>499 ₽/мес</span>
+                                </div>
+                                <div class="tariff-preview-card">
+                                    <h4>Премиум</h4>
+                                    <p>500 Мбит/с</p>
+                                    <span>799 ₽/мес</span>
+                                </div>
+                                <div class="tariff-preview-card">
+                                    <h4>Бизнес</h4>
+                                    <p>1000 Мбит/с</p>
+                                    <span>1499 ₽/мес</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lk-section" id="services">
+                        <h2>Услуги</h2>
+                        <div class="services-section">
+                            <h3>Подключённые услуги</h3>
+                            <div class="connected-services" id="connectedServices">
+                                <div class="service-item">
+                                    <div class="service-info">
+                                        <h4>Интернет</h4>
+                                        <p>Основная услуга</p>
+                                    </div>
+                                    <span class="service-status active">Активна</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="services-section">
+                            <h3>Дополнительные услуги</h3>
+                            <div class="extra-services">
+                                <div class="extra-service-item">
+                                    <div class="service-info">
+                                        <h4>Статический IP-адрес</h4>
+                                        <p>Постоянный IP для ваших нужд</p>
+                                    </div>
+                                    <div class="service-price">
+                                        <span>+100 ₽/мес</span>
+                                        <button class="btn btn-sm">Подключить</button>
+                                    </div>
+                                </div>
+                                <div class="extra-service-item">
+                                    <div class="service-info">
+                                        <h4>Антивирус</h4>
+                                        <p>Защита ваших устройств</p>
+                                    </div>
+                                    <div class="service-price">
+                                        <span>+50 ₽/мес</span>
+                                        <button class="btn btn-sm">Подключить</button>
+                                    </div>
+                                </div>
+                                <div class="extra-service-item">
+                                    <div class="service-info">
+                                        <h4>Родительский контроль</h4>
+                                        <p>Безопасность для детей</p>
+                                    </div>
+                                    <div class="service-price">
+                                        <span>+30 ₽/мес</span>
+                                        <button class="btn btn-sm">Подключить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lk-section" id="payment">
+                        <h2>Оплата</h2>
+                        <div class="payment-section">
+                            <div class="balance-card">
+                                <h3>Текущий баланс</h3>
+                                <div class="balance-amount" id="paymentBalance">0 ₽</div>
+                                <p>До списания: <span id="daysLeft">- дней</span></p>
+                            </div>
+                            
+                            <div class="payment-form">
+                                <h3>Пополнить баланс</h3>
+                                <div class="amount-buttons">
+                                    <button class="amount-btn" data-amount="300">300 ₽</button>
+                                    <button class="amount-btn" data-amount="500">500 ₽</button>
+                                    <button class="amount-btn" data-amount="1000">1000 ₽</button>
+                                    <button class="amount-btn" data-amount="2000">2000 ₽</button>
+                                </div>
+                                <div class="custom-amount">
+                                    <input type="number" id="customAmount" placeholder="Другая сумма">
+                                </div>
+                                <button class="btn btn-primary btn-block" onclick="processPayment()">Оплатить</button>
+                            </div>
+                        </div>
+                        
+                        <div class="payment-history">
+                            <h3>История платежей</h3>
+                            <table class="payments-table">
+                                <thead>
+                                    <tr>
+                                        <th>Дата</th>
+                                        <th>Сумма</th>
+                                        <th>Статус</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="paymentsTable">
+                                    <tr>
+                                        <td colspan="3" class="empty">Нет платежей</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="lk-section" id="tickets">
+                        <h2>Обращения</h2>
+                        <div class="tickets-section">
+                            <button class="btn btn-primary" onclick="createTicket()">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="12" y1="5" x2="12" y2="19"/>
+                                    <line x1="5" y1="12" x2="19" y2="12"/>
+                                </svg>
+                                Новое обращение
+                            </button>
+                            
+                            <div class="tickets-list" id="ticketsList">
+                                <p class="empty">У вас нет обращений</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lk-section" id="settings">
+                        <h2>Настройки</h2>
+                        <div class="settings-section">
+                            <h3>Личные данные</h3>
+                            <form class="settings-form" id="profileForm">
+                                <div class="form-group">
+                                    <label>ФИО</label>
+                                    <input type="text" id="settingsName" value="">
+                                </div>
+                                <div class="form-group">
+                                    <label>Телефон</label>
+                                    <input type="tel" id="settingsPhone" value="+7 949-309-42-66">
+                                </div>
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input type="email" id="settingsEmail" value="example@mail.ru">
+                                </div>
+                                <div class="form-group">
+                                    <label>Адрес</label>
+                                    <input type="text" id="settingsAddress" value="г. Ясиноватая, ул. Примерная, д. 1">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Сохранить</button>
+                            </form>
+                        </div>
+                        
+                        <div class="settings-section">
+                            <h3>Уведомления</h3>
+                            <div class="notification-settings">
+                                <label class="toggle-item">
+                                    <input type="checkbox" checked>
+                                    <span>SMS-уведомления о платежах</span>
+                                </label>
+                                <label class="toggle-item">
+                                    <input type="checkbox" checked>
+                                    <span>Email-рассылка новостей</span>
+                                </label>
+                                <label class="toggle-item">
+                                    <input type="checkbox">
+                                    <span>Уведомления о задолженности</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal" id="paymentModal">
+        <div class="modal-content">
+            <div class="modal-icon success">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20 6L9 17l-5-5"/>
+                </svg>
+            </div>
+            <h3>Платёж успешно выполнен!</h3>
+            <p>Баланс пополнен на <span id="paidAmount">0</span> ₽</p>
+            <button class="btn btn-primary" onclick="closePaymentModal()">Окей</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">Диалан</a>
+                    <p>Ваш надёжный интернет-провайдер. Подключаем скоростной интернет. г. Ясиноватая м-н "Центральный". д.24</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Услуги</h4>
+                    <ul>
+                        <li><a href="services.html#home">Интернет для дома</a></li>
+                        <li><a href="services.html#business">Интернет для бизнеса</a></li>
+                        <li><a href="services.html#phone">IP-телефония</a></li>
+                        <li><a href="services.html#tv">Телевидение</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Компания</h4>
+                    <ul>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="support.html">Поддержка</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Поддержка</h4>
+                    <ul>
+                        <li><a href="support.html">Помощь</a></li>
+                        <li><a href="support.html#docs">Договор</a></li>
+                        <li><a href="support.html#payment">Оплата</a></li>
+                        <li><a href="#">Скорость</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Диалан. Все права защищены.</p>
+                <div class="social-links">
+                    <a href="#" title="ВКонтакте"><i class="fab fa-vk"></i></a>
+                    <a href="#" title="Одноклассники"><i class="fab fa-odnoklassniki"></i></a>
+                    <a href="#" title="Telegram"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        const userData = JSON.parse(localStorage.getItem('dialan_user')) || {
+            name: 'Иван Иванов',
+            accountNumber: '000001',
+            balance: 500,
+            tariff: 'Оптимальный',
+            speed: 100,
+            price: 499,
+            nextPaymentDate: '15.03.2026'
+        };
+
+        function saveUserData() {
+            localStorage.setItem('dialan_user', JSON.stringify(userData));
+        }
+
+        document.getElementById('userName').textContent = userData.name;
+        document.getElementById('welcomeName').textContent = userData.name.split(' ')[0];
+        document.getElementById('sidebarName').textContent = userData.name;
+        document.getElementById('accountNumber').textContent = userData.accountNumber;
+        document.getElementById('balance').textContent = userData.balance + ' ₽';
+        document.getElementById('currentTariff').textContent = userData.tariff;
+        document.getElementById('currentSpeed').textContent = userData.speed + ' Мбит/с';
+        document.getElementById('nextPayment').textContent = userData.nextPaymentDate;
+        
+        document.getElementById('tariffName').textContent = userData.tariff;
+        document.getElementById('tariffSpeed').textContent = userData.speed + ' Мбит/с';
+        document.getElementById('tariffPrice').textContent = userData.price + ' ₽/мес';
+        
+        document.getElementById('paymentBalance').textContent = userData.balance + ' ₽';
+        
+        document.getElementById('settingsName').value = userData.name;
+        
+        const daysLeft = Math.ceil((userData.balance / userData.price) * 30);
+        document.getElementById('daysLeft').textContent = daysLeft + ' дней';
+
+        const navLinks = document.querySelectorAll('.lk-nav a[data-section]');
+        const sections = document.querySelectorAll('.lk-section');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const sectionId = link.dataset.section;
+                
+                navLinks.forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+                
+                sections.forEach(s => s.classList.remove('active'));
+                document.getElementById(sectionId).classList.add('active');
+            });
+        });
+
+        const amountBtns = document.querySelectorAll('.amount-btn');
+        const customAmount = document.getElementById('customAmount');
+        
+        amountBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                customAmount.value = btn.dataset.amount;
+            });
+        });
+
+        function processPayment() {
+            const amount = parseInt(customAmount.value) || 0;
+            if (amount > 0) {
+                userData.balance += amount;
+                saveUserData();
+                
+                document.getElementById('paidAmount').textContent = amount;
+                document.getElementById('paymentModal').classList.add('active');
+                
+                updateBalance();
+            }
+        }
+
+        function updateBalance() {
+            document.getElementById('balance').textContent = userData.balance + ' ₽';
+            document.getElementById('paymentBalance').textContent = userData.balance + ' ₽';
+            const daysLeft = Math.ceil((userData.balance / userData.price) * 30);
+            document.getElementById('daysLeft').textContent = daysLeft + ' дней';
+        }
+
+        function closePaymentModal() {
+            document.getElementById('paymentModal').classList.remove('active');
+            customAmount.value = '';
+        }
+
+        document.getElementById('paymentModal').addEventListener('click', (e) => {
+            if (e.target.id === 'paymentModal') {
+                closePaymentModal();
+            }
+        });
+
+        function createTicket() {
+            const subject = prompt('Тема обращения:');
+            if (subject) {
+                alert('Обращение создано! Мы ответим вам в ближайшее время.');
+            }
+        }
+
+        document.getElementById('profileForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            userData.name = document.getElementById('settingsName').value;
+            saveUserData();
+            document.getElementById('userName').textContent = userData.name;
+            document.getElementById('welcomeName').textContent = userData.name.split(' ')[0];
+            document.getElementById('sidebarName').textContent = userData.name;
+            alert('Данные сохранены!');
+        });
+    </script>
+</body>
+</html>
