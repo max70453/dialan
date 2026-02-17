@@ -144,36 +144,93 @@ function closeModal() {
     }
 }
 
+function validateField(input) {
+    const value = input.value.trim();
+    const parent = input.closest('.form-group');
+    
+    if (!parent) return false;
+    
+    const wrapper = parent.querySelector('.input-wrapper') || parent.querySelector('.select-wrapper');
+    
+    if (!value) {
+        input.classList.add('error');
+        input.classList.remove('valid');
+        if (wrapper) {
+            wrapper.classList.add('error');
+            wrapper.classList.remove('valid');
+        }
+        return false;
+    } else {
+        input.classList.remove('error');
+        input.classList.add('valid');
+        if (wrapper) {
+            wrapper.classList.remove('error');
+            wrapper.classList.add('valid');
+        }
+        return true;
+    }
+}
+
 if (form) {
+    const inputs = form.querySelectorAll('input, select');
+    
+    inputs.forEach(input => {
+        input.addEventListener('blur', function() {
+            validateField(this);
+        });
+        
+        input.addEventListener('input', function() {
+            if (this.classList.contains('error')) {
+                validateField(this);
+            }
+        });
+    });
+    
     form.addEventListener('submit', function(e) {
         e.preventDefault();
         
         let isValid = true;
-        const inputs = form.querySelectorAll('input[required], select[required]');
+        const formInputs = form.querySelectorAll('input, select');
         
-        inputs.forEach(input => {
-            input.classList.remove('error');
-            if (!input.value.trim()) {
-                input.classList.add('error');
+        formInputs.forEach(input => {
+            if (!validateField(input)) {
                 isValid = false;
             }
         });
 
         if (isValid) {
-            const formData = {
-                name: document.getElementById('name').value,
-                phone: document.getElementById('phone').value,
-                address: document.getElementById('address').value,
-                tariff: document.getElementById('tariff').value,
-                date: new Date().toISOString()
-            };
-
-            localStorage.setItem('dialan_application', JSON.stringify(formData));
+            const submitBtn = form.querySelector('button[type="submit"]');
+            submitBtn.classList.add('loading');
+            submitBtn.disabled = true;
             
-            if (modal) {
-                modal.classList.add('active');
-            }
-            form.reset();
+            setTimeout(() => {
+                const formData = {
+                    name: document.getElementById('name').value,
+                    phone: document.getElementById('phone').value,
+                    address: document.getElementById('address').value,
+                    tariff: document.getElementById('tariff').value,
+                    date: new Date().toISOString()
+                };
+
+                localStorage.setItem('dialan_application', JSON.stringify(formData));
+                
+                submitBtn.classList.remove('loading');
+                submitBtn.disabled = false;
+                
+                if (modal) {
+                    modal.classList.add('active');
+                }
+                
+                formInputs.forEach(input => {
+                    input.classList.remove('valid');
+                    const wrapper = input.closest('.input-wrapper') || input.closest('.select-wrapper');
+                    if (wrapper) {
+                        wrapper.classList.remove('valid');
+                    }
+                });
+                
+                form.reset();
+            }, 1500);
         }
     });
 }
@@ -190,25 +247,28 @@ const phoneInput = document.getElementById('phone');
 if (phoneInput) {
     phoneInput.addEventListener('input', function(e) {
         let value = e.target.value.replace(/\D/g, '');
+        if (value.length > 11) {
+            value = value.substring(0, 11);
+        }
+        
+        let formatted = '';
         if (value.length > 0) {
-            value = '+' + value;
+            formatted = '+' + value;
         }
-        if (value.length > 1) {
-            value = value.substring(0, 2) + ' (' + value.substring(2);
+        if (value.length >= 2) {
+            formatted = '+' + value.substring(0, 1) + ' (' + value.substring(1);
         }
-        if (value.length > 7) {
-            value = value.substring(0, 7) + ') ' + value.substring(7);
+        if (value.length >= 5) {
+            formatted = '+' + value.substring(0, 1) + ' (' + value.substring(1, 4) + ') ' + value.substring(4);
         }
-        if (value.length > 12) {
-            value = value.substring(0, 12) + '-' + value.substring(12);
+        if (value.length >= 7) {
+            formatted = '+' + value.substring(0, 1) + ' (' + value.substring(1, 4) + ') ' + value.substring(4, 7) + '-' + value.substring(7);
         }
-        if (value.length > 15) {
-            value = value.substring(0, 15) + '-' + value.substring(15);
+        if (value.length >= 9) {
+            formatted = '+' + value.substring(0, 1) + ' (' + value.substring(1, 4) + ') ' + value.substring(4, 7) + '-' + value.substring(7, 9) + '-' + value.substring(9);
         }
-        if (value.length > 17) {
-            value = value.substring(0, 17);
-        }
-        e.target.value = value;
+        
+        e.target.value = formatted;
     });
 }
 

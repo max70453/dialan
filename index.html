@@ -208,32 +208,84 @@
                 <div class="form-row">
                     <div class="form-group">
                         <label for="name">Ваше имя</label>
-                        <input type="text" id="name" name="name" placeholder="Иван Иванов" required>
+                        <div class="input-wrapper">
+                            <input type="text" id="name" name="name" placeholder="Иван Иванов">
+                            <span class="input-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="12" cy="7" r="4"/>
+                                </svg>
+                            </span>
+                            <span class="valid-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 6L9 17l-5-5"/>
+                                </svg>
+                            </span>
+                        </div>
                         <span class="error-message">Пожалуйста, введите имя</span>
                     </div>
                     <div class="form-group">
                         <label for="phone">Телефон</label>
-                        <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                        <div class="input-wrapper">
+                            <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__">
+                            <span class="input-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                            </span>
+                            <span class="valid-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 6L9 17l-5-5"/>
+                                </svg>
+                            </span>
+                        </div>
                         <span class="error-message">Пожалуйста, введите телефон</span>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="address">Адрес подключения</label>
-                    <input type="text" id="address" name="address" placeholder="ул. Примерная, д. 1, кв. 1" required>
+                    <div class="input-wrapper">
+                        <input type="text" id="address" name="address" placeholder="ул. Примерная, д. 1, кв. 1">
+                        <span class="input-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </span>
+                        <span class="valid-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                        </span>
+                    </div>
                     <span class="error-message">Пожалуйста, введите адрес</span>
                 </div>
                 <div class="form-group">
                     <label for="tariff">Выберите тариф</label>
-                    <select id="tariff" name="tariff" required>
-                        <option value="">Выберите тариф</option>
-                        <option value="start">Старт - 30 Мбит/с - 299 ₽</option>
-                        <option value="optimal">Оптимальный - 100 Мбит/с - 499 ₽</option>
-                        <option value="premium">Премиум - 500 Мбит/с - 799 ₽</option>
-                        <option value="business">Бизнес - 1000 Мбит/с - 1499 ₽</option>
-                    </select>
+                    <div class="select-wrapper">
+                        <select id="tariff" name="tariff">
+                            <option value="">Выберите тариф</option>
+                            <option value="start">Старт - 30 Мбит/с - 299 ₽</option>
+                            <option value="optimal">Оптимальный - 100 Мбит/с - 499 ₽</option>
+                            <option value="premium">Премиум - 500 Мбит/с - 799 ₽</option>
+                            <option value="business">Бизнес - 1000 Мбит/с - 1499 ₽</option>
+                        </select>
+                        <span class="select-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6,9 12,15 18,9"/>
+                            </svg>
+                        </span>
+                    </div>
                     <span class="error-message">Пожалуйста, выберите тариф</span>
                 </div>
-                <button type="submit" class="btn btn-primary">Отправить заявку</button>
+                <button type="submit" class="btn btn-primary">
+                    <span class="btn-text">Отправить заявку</span>
+                    <span class="btn-loader">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                        </svg>
+                    </span>
+                </button>
             </form>
         </div>
     </section>
